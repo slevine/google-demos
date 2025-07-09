@@ -1,0 +1,18 @@
+# Dataproc Serverless Performance Benchmark
+
+This demo showcases the performance and cost-efficiency of the Dataproc Serverless
+Premium Tier by comparing it against the Standard Tier on a complex, shuffle-intensive
+workload.
+
+- **[Full Demo Guide](./docs/dataproc-premium-demo.md)**
+
+## Benchmark Overview
+
+The benchmark executes an identical PySpark job on both tiers to measure the
+improvements in runtime, resource utilization, and cost. For the tested workload, the
+Premium Tier is approximately **2.85x faster** and consumes **50% fewer** billable
+resources (DCUs).
+
+- **[Dataproc Serverless Official Documentation][1]**
+
+[1]:https://cloud.google.com/dataproc-serverless/docs/guides/native-query-execution
