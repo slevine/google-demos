@@ -24,3 +24,11 @@ All demos in this repository require the following:
   - Shows how to use a conversational AI agent to build a data pipeline from natural
     language prompts.
 
+- **[Dataproc Serverless Performance Benchmark](./dataproc-premium-demo/)**
+  - Showcases the performance and cost-efficiency of the Dataproc Serverless Premium
+    Tier by comparing it against the Standard Tier on a complex, shuffle-intensive
+    workload.
+
+- **[Dataproc Secure Multi-Tenancy](./dataproc-secure-multi-tenancy/)**
+  - Demonstrates how to enforce fine-grained data access for multiple users on a
+    single, shared Dataproc cluster using service account-based security.

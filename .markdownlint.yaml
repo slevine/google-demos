@@ -1,3 +1,2 @@
-MD013:
-  line_length: 100
-MD025: false
+# Disable line length rule for the entire project
+MD013: false

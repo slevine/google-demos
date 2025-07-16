@@ -1,6 +1,6 @@
 # Dataproc Serverless Performance Benchmark
 
-This demo showcases the performance and cost-efficiency of the Dataproc Serverless
+This demo demonstrates the performance and cost-efficiency of the Dataproc Serverless
 Premium Tier by comparing it against the Standard Tier on a complex, shuffle-intensive
 workload.
 
@@ -13,6 +13,4 @@ improvements in runtime, resource utilization, and cost. For the tested workload
 Premium Tier is approximately **2.85x faster** and consumes **50% fewer** billable
 resources (DCUs).
 
-- **[Dataproc Serverless Official Documentation][1]**
-
-[1]:https://cloud.google.com/dataproc-serverless/docs/guides/native-query-execution
+- **[Dataproc Serverless Official Documentation](https://cloud.google.com/dataproc-serverless/docs/guides/native-query-execution)**
