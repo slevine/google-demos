@@ -7,7 +7,7 @@ Native Query Engine (NQE), using only supported operations.
 
 import sys
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import avg, col, countDistinct, sum, when
+from pyspark.sql.functions import avg, broadcast, col, countDistinct, sum, when
 
 
 def run_complex_analysis(
@@ -29,9 +29,9 @@ def run_complex_analysis(
 
     # 2. Initial Join
     # Join the sales and customer tables to create a unified view.
-    # The customer table is small, but we let the optimizer choose the strategy.
+    # The customer table is small, so we explicitly hint for a broadcast join.
     print("--> Performing initial join...")
-    joined_df = sales_df.join(customers_df, "customer_id", "inner")
+    joined_df = sales_df.join(broadcast(customers_df), "customer_id", "inner")
 
     # Cache the joined DataFrame to optimize subsequent actions.
     joined_df.cache()
