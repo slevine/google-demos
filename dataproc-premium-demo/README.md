@@ -13,6 +13,8 @@ improvements in runtime, resource utilization, and cost. For the tested
 workload, the Premium Tier is approximately **2.85x faster** and consumes
 **50% fewer** billable resources (DCUs).
 
+- **[Dataproc Serverless Official Documentation](https://cloud.google.com/dataproc-serverless/docs/guides/native-query-execution)**
+
 ### Bonus: BigQuery Benchmark
 
 We also include a [notebook](./notebooks/bigquery_benchmark.ipynb) to
@@ -22,4 +24,3 @@ performance of:
 - **BigLake External Tables**: Querying GCS data directly (zero-copy).
 - **Native BigQuery Tables**: Querying data loaded into BigQuery's managed storage.
 
-- **[Dataproc Serverless Official Documentation](https://cloud.google.com/dataproc-serverless/docs/guides/native-query-execution)**
