@@ -161,8 +161,8 @@ spark.memory.offHeap.size=12g \
 
 ## 3. Compare Results
 
-In the Google Cloud Console, navigate to **Dataproc > Batches** and compare the *
-*Monitoring** tabs of the two completed analysis jobs.
+In the Google Cloud Console, navigate to **Dataproc > Batches** and compare the \*
+\*Monitoring\*\* tabs of the two completed analysis jobs.
 
 - **Total Runtime:** Note the reduction in the "Run time" metric. The Premium Tier job
   is expected to be 2-3x faster.
@@ -173,6 +173,14 @@ In the Google Cloud Console, navigate to **Dataproc > Batches** and compare the 
 - **GC Time:** Compare the "Ratio of JVM GC Time to Runtime" chart. The Standard Tier
   run will likely show high and volatile GC activity, while the Premium Tier run should
   be flat and near zero.
+
+### Step 3.1: (Optional) Run BigQuery Benchmark
+
+Since you have generated a large-scale dataset in GCS, you can also benchmark BigQuery's performance on this same data.
+
+1. Open the [BigQuery Benchmark Notebook](../notebooks/bigquery_benchmark.ipynb).
+2. Follow the instructions to compare **BigLake External Tables** (querying GCS directly) vs. **Native BigQuery Tables** (managed storage).
+3. This provides a valuable cross-product performance perspective without generating new data.
 
 ---
 
@@ -187,4 +195,4 @@ contents.
 gsutil rm -r gs://${GCS_BUCKET}
 ```
 
-[1]:https://cloud.google.com/dataproc-serverless/docs/guides/native-query-execution
+[1]: https://cloud.google.com/dataproc-serverless/docs/guides/native-query-execution

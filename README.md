@@ -27,7 +27,9 @@ All demos in this repository require the following:
 - **[Dataproc Serverless Performance Benchmark](./dataproc-premium-demo/)**
   - Showcases the performance and cost-efficiency of the Dataproc Serverless Premium
     Tier by comparing it against the Standard Tier on a complex, shuffle-intensive
-    workload.
+    workload. 
+  - It also includes a **[BigQuery benchmark](./dataproc-premium-demo/notebooks/)** to
+    compare performance against external and native tables.
 
 - **[Dataproc Secure Multi-Tenancy](./dataproc-secure-multi-tenancy/)**
   - Demonstrates how to enforce fine-grained data access for multiple users on a
