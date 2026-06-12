@@ -20,6 +20,10 @@ All demos in this repository require the following:
   - Demonstrates a multi-engine lakehouse using BigQuery and Spark on a single Iceberg
     table.
 
+- **[BigQuery Commercial Underwriting & Actuarial Document Intelligence](./bigquery-unstructured-data/)**
+  - Showcases an advanced unstructured data analytics and actuarial risk scoring
+    architecture built natively on Google Cloud.
+
 - **[Data Engineering Agent Introduction](./data-engineering-agent-intro/)**
   - Shows how to use a conversational AI agent to build a data pipeline from natural
     language prompts.
